@@ -1,0 +1,53 @@
+body {
+	margin:0;
+	padding:0;
+	background:#eee;
+}
+
+canvas {
+	box-shadow: 0px 0 17px #ddda;
+}
+
+.canvasHolder {
+	text-align: center;
+	margin: 2em auto;
+}
+
+button, input[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #ddd;
+}
+
+.colors {
+
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    padding-top: 5px;
+    border: 1px solid #ddd;
+
+}
+
+.item_path, .item_block {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	border:2px solid;
+}
+
+.item_path {
+	background: #fff;
+	border-color: #ddd;
+}
+
+
+.item_block {
+	background: #000;
+	border-color: #ddd;
+}
+
+.item_active {
+	border-color: red;
+}

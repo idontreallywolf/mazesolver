@@ -1,0 +1,6 @@
+let enums = {
+	MODE_FREE: 0,
+	MODE_BLOCK: 1,
+	MODE_DESTINATION_NODE: 2,
+	MODE_PATH: 3
+}

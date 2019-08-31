@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>PathFinder v1.0</title>
+		<link rel="stylesheet" href="/css/default.css">
+
+		<!-- Include Tile class -->
+		<script src="./js/enums.js" charset="utf-8"></script>
+
+		<!-- Include Tile class -->
+		<script src="./js/tile.js" charset="utf-8"></script>
+
+		<!-- Include DFS -->
+		<script src="./js/dfs.js" charset="utf-8"></script>
+
+		<!-- Include BFS -->
+		<script src="./js/bfs.js" charset="utf-8"></script>
+
+		<!-- Include Maze Generator -->
+		<script src="./js/genMaze.js" charset="utf-8"></script>
+
+		<!-- Main program -->
+		<script src="./js/canvas.js" charset="utf-8"></script>
+
+		<!-- JQuery -->
+		<script src="./js/jquery341.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.colors .item').click(function(){
+					brush = parseInt($(this).data("item-type"));
+					$('.item_active').removeClass('item_active');
+					$(this).addClass('item_active');
+				});
+
+				$('#tileSizePicker').change(function(){
+					tileSize = $(this).val();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="canvasHolder">
+			<div><canvas id="canvas" width="400" height="400"></canvas></div>
+			<button id="saveMaze" type="button" name="button">Save</button>
+			<button id="resetEndPoints" type="button" name="button">Reset start/end</button>
+			<button id="clearMaze" type="button" name="button">Clear Maze</button>
+			<button id="findPath" type="button" name="button">Find path</button>
+			<button id="genMaze" type="button" name="button">Generate Maze</button>
+			<!--form class="uploadForm" method="post">
+				<input id="fileToLoad" type="file" name="mazeFile">
+				<input id="loadMaze" type="submit" name="submit" value="Load Maze">
+			</form-->
+		</div>
+	</body>
+</html>
