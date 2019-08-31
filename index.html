@@ -22,22 +22,6 @@
 
 		<!-- Main program -->
 		<script src="./js/canvas.js" charset="utf-8"></script>
-
-		<!-- JQuery -->
-		<script src="./js/jquery341.js" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.colors .item').click(function(){
-					brush = parseInt($(this).data("item-type"));
-					$('.item_active').removeClass('item_active');
-					$(this).addClass('item_active');
-				});
-
-				$('#tileSizePicker').change(function(){
-					tileSize = $(this).val();
-				});
-			});
-		</script>
 	</head>
 	<body>
 		<div class="canvasHolder">
